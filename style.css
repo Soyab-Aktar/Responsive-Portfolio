@@ -68,6 +68,14 @@ nav li a {
     max-width: 580px;
     /* background-color: aqua; */
     padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn2{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5px;
 }
 
 .banner-h3 {
@@ -87,6 +95,7 @@ nav li a {
 }
 
 #banner-b1 {
+    width: 50%;
     background-color: #FD6E0A;
     border: none;
     font-weight: bold;
@@ -98,6 +107,7 @@ nav li a {
 }
 
 #banner-b2 {
+    width: 50%;
     border: 2px solid #FD6E0A;
     font-weight: bold;
     font-size: 20px;
@@ -380,6 +390,55 @@ footer {
 }
 
 @media screen and (max-width:576px) {
+
+    .header-one{
+        background-image: none;
+        padding: 10px;
+    }
+    nav{
+        margin: 25px auto;
+    }
+
+    nav ul li {
+        /* list-style: none; */
+        margin-right: 5px;
+        /* font-weight: 500; */
+    } 
+    .navh{
+        margin-left: 5px;
+    } 
+    nav li a {
+        /* text-decoration: none; */
+        font-size: 15px;
+    }
+    .btn-p {
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .btn2{
+        /* display: flex; */
+        flex-direction: column;
+        gap: 20px;
+    }
+    #banner-b1 {
+        width: 60%;
+    }
+    
+    #banner-b2 {
+        width: 60%;
+    }
+
+
+
+
+
     .sec-header {
         padding: 10px;
     }
