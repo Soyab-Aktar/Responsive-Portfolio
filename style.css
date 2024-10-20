@@ -5,7 +5,7 @@
     font-variation-settings:
         "wdth" 100;
 
-        background-color: black;
+    background-color: black;
 }
 
 * {
@@ -139,7 +139,8 @@ nav li a {
     /* height: 290px; */
     /* background-color: yellow; */
     margin: 230px auto;
-    padding: 130px 150px 130px 150px;
+    padding: 130px auto;
+    display: flex;
 
 }
 
@@ -221,6 +222,9 @@ nav li a {
     max-width: 1140px;
     margin: 0px auto;
     margin-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .four-h1 {
@@ -231,15 +235,23 @@ nav li a {
 
 .data {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .edu {
     max-width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .exp {
     max-width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
 }
 
@@ -264,14 +276,14 @@ nav li a {
 }
 
 .school {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     border: 1px solid #FD6E0A;
     border-radius: 5px;
     padding: 5px;
 }
 
 .comp {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     border: 1px solid #FD6E0A;
     border-radius: 5px;
     padding: 5px;
@@ -285,13 +297,15 @@ nav li a {
     color: white;
     border-radius: 5px;
     padding: 18px 35px;
-    margin: 0px 470px;
+    margin: 0px auto;
+    margin-top: 40px;
 }
 
 footer {
     max-width: 1140px;
     margin: 130px auto;
     display: flex;
+    justify-content: space-between;
 
 }
 
@@ -341,8 +355,10 @@ footer {
     height: 180px;
     border: 1px solid #FD6E0A;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     padding: 18px 365px 134px 10px;
+    /* padding: auto; */
+
     background-color: black;
 
 }
@@ -356,5 +372,85 @@ footer {
     border-radius: 5px;
     padding: 18px 35px;
     width: 150px;
-    
+
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .sec-header {
+        padding: 10px;
+    }
+
+    .sec-bio {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-thr {
+        padding: 10px;
+    }
+
+    .lang {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .node {
+        max-width: 100%;
+    }
+
+
+    .main-four {
+        padding: 10px;
+    }
+
+    .data {
+        flex-direction: column;
+    }
+
+    .data-h1 {
+        margin-bottom: 0px;
+    }
+
+    .four-h1 {
+        margin-bottom: 60px;
+    }
+
+    .edu {
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    .exp {
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 50px;
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        max-width: 100%;
+    }
+
+    input[type="email"] {
+        max-width: 100%;
+    }
+
+    .info-chat {
+        max-width: 100%;
+        padding: auto;
+        padding-right: 0px;
+    }
+
+    .btn-5 {
+        margin: 0px auto;
+    }
+
 }
